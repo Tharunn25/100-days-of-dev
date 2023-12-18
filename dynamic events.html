@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Query Selector</title>
+</head>
+<body>
+    <nav class="block-rem">
+        <p>Welcome to my Website</p>
+    </nav>
+
+    <div class="block-remove">
+        <h4 id="name">Hey there, my name is <span id="username">Tharunn E</span></h4>
+        <p class="block">Here is a code for you</p>
+        <pre><code>console.log(hey there)</code></pre>
+    </div>
+
+    <button id="button">click me</button>
+    <div id="container"></div>
+    <script>
+    const button = document.getElementById("button");
+    const container = document.getElementById('container');
+    
+    button.addEventListener("click", ()=>{
+        const el = document.createElement("h1");
+        el.innerText = "Tharunn";
+        container.appendChild(el);
+
+    });
+        
+    </script>    
+
+</body>
+</html>
